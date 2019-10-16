@@ -1,0 +1,36 @@
+{
+	"name": "studiomitte/speech_input",
+	"type": "typo3-cms-extension",
+	"description": "Use the speech API to add content",
+	"keywords": [
+		"TYPO3",
+		"speed",
+		"voice",
+		"SpeechRecognition"
+	],
+	"homepage": "https://studiomitte.com",
+	"license": [
+		"GPL-2.0+"
+	],
+	"require": {
+		"typo3/cms-core": "^9.5"
+	},
+	"autoload": {
+		"psr-4": {
+			"StudioMitte\\SpeechInput\\": "Classes"
+		}
+	},
+	"replace": {
+		"typo3-ter/speech-input": "self.version"
+	},
+	"config": {
+		"vendor-dir": ".Build/vendor",
+		"bin-dir": ".Build/bin"
+	},
+	"extra": {
+		"typo3/cms": {
+			"extension-key": "speech_input"
+		}
+	}
+}
+
