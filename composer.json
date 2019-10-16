@@ -1,5 +1,5 @@
 {
-	"name": "studiomitte/speech_input",
+	"name": "studiomitte/speech-input",
 	"type": "typo3-cms-extension",
 	"description": "Use the speech API to add content",
 	"keywords": [
