@@ -9,7 +9,7 @@ define(['jquery'], function ($) {
     var SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
     SpeechRecognition.continuous = true;
     SpeechRecognition.interimResults = true;
-    SpeechRecognition.lang = 'de-DE';
+    // SpeechRecognition.lang = 'de-DE'; // fallback to body html attribute > fallback to user agent
     var recognition = new SpeechRecognition();
 
     var focusElement;
