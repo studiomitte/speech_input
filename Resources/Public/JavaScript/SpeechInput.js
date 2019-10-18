@@ -1,19 +1,5 @@
-/*
- * This file is part of the TYPO3 CMS project.
- *
- * It is free software; you can redistribute it and/or modify it under
- * the terms of the GNU General Public License, either version 2
- * of the License, or any later version.
- *
- * For the full copyright and license information, please read the
- * LICENSE.txt file that was distributed with this source code.
- *
- * The TYPO3 project - inspiring people to share!
- */
-
 /**
- * Module: TYPO3/CMS/Recordlist/UrlLinkHandler
- * URL link interaction
+ * Module: TYPO3/CMS/SpechInput/SpechInput
  */
 define(['jquery'], function ($) {
   'use strict';
@@ -56,7 +42,7 @@ define(['jquery'], function ($) {
       var current = event.resultIndex;
       var transcript = event.results[current][0].transcript;
 
-      console.log(transcript);
+      // console.log(transcript);
       var targetElement = $(document.activeElement);
       if (
         (targetElement.get(0).tagName === 'INPUT' && $(targetElement).attr('type') === 'text')
@@ -70,8 +56,6 @@ define(['jquery'], function ($) {
     console.error(e);
     $('.speech-action').hide();
   }
-
-
 });
 
 
